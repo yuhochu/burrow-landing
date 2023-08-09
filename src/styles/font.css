@@ -4,7 +4,7 @@
     font-family: 'Gantari';
     font-style: normal;
     font-weight: 900;
-    src: url('../../public/fonts/gantari-v1-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../assets/fonts/gantari-v1-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
@@ -12,7 +12,7 @@
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('../../public/fonts/work-sans-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../assets/fonts/work-sans-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* work-sans-500 - latin */
 @font-face {
@@ -20,7 +20,7 @@
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;
-    src: url('../../public/fonts/work-sans-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../assets/fonts/work-sans-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* work-sans-600 - latin */
 @font-face {
@@ -28,7 +28,7 @@
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
-    src: url('../../public/fonts/work-sans-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../assets/fonts/work-sans-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* work-sans-700 - latin */
 @font-face {
@@ -36,7 +36,7 @@
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
-    src: url('../../public/fonts/work-sans-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../assets/fonts/work-sans-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* darker-grotesque-600 - latin */
@@ -45,5 +45,5 @@
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 600;
-    src: url('../../public/fonts/darker-grotesque-v8-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../assets/fonts/darker-grotesque-v8-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

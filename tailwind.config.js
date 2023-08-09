@@ -25,6 +25,7 @@ module.exports = {
         primary: {
           500: '#D2FF3A'
         },
+
         red: {
           '50': '#ffebee',
           '100': '#ffcdd2',
@@ -173,13 +174,10 @@ module.exports = {
           50: '#fafafa',
           100: '#f5f5f5',
           200: '#eeeeee',
-          300: '#e0e0e0',
-          400: '#bdbdbd',
-          500: '#9e9e9e',
-          600: '#757575',
-          700: '#616161',
-          800: '#424242',
-          900: '#212121'
+          300: '#C0C4E9',
+          700: '#494D69',
+          800: '#23253A',
+          900: '#0f101c'
         },
         'blue-gray': {
           50: '#eceff1',
@@ -333,9 +331,6 @@ module.exports = {
       },
       boxShadow: {
         outline: '0 0 0 3px rgba(101, 31, 255, 0.4)'
-      },
-      borderRadius: {
-        box: '12px'
       }
     }
   },

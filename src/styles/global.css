@@ -1,4 +1,6 @@
 @import "./font.css";
+@import "swiper/css";
+@import "swiper/css/autoplay";
 
 html {
     background-color: #14162B;
@@ -12,7 +14,14 @@ html {
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: 600;
     line-height: 1;
+}
 
+.t1a {
+    font-size: 60px;
+    font-style: normal;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 600;
+    line-height: 1;
 }
 
 .t2 {
