@@ -48,7 +48,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         </Link>
 
         <div>
-          <Image src={assets.svg.svgNear} />
+          <Image src={assets.img.tokens} />
         </div>
       </Box1>
 

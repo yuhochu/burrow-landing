@@ -3,6 +3,7 @@ import svgNear from '../assets/svg/near.svg';
 import svgDai from '../assets/svg/dai.svg';
 import svgUsd from '../assets/svg/usd.svg';
 import svgUsdt from '../assets/svg/usdt.svg';
+import svgHole from '../assets/svg/hole.svg';
 import svgArrowRight from '../assets/svg/arrowRight.svg';
 import articlefeb9 from '../assets/articlefeb9.webp';
 import articlejul13 from '../assets/articlejul13.webp';
@@ -10,6 +11,7 @@ import articlejul292022 from '../assets/articlejul292022.webp';
 import articlejun28 from '../assets/articlejun28.webp';
 import articleoct122022 from '../assets/articleoct122022.webp';
 import articlemay11 from '../assets/articlemay11.webp';
+import tokens from '../assets/tokens.png';
 
 const assets = {
   svg: {
@@ -78,10 +80,10 @@ const assets = {
         </defs>
       </svg>
     ),
-    svgNear, svgDai, svgUsdt, svgUsd, svgArrowRight
+    svgNear, svgDai, svgUsdt, svgUsd, svgArrowRight, svgHole
   },
   img: {
-    articlemay11, articlefeb9, articlejul13, articlejul292022, articlejun28, articleoct122022
+    articlemay11, articlefeb9, articlejul13, articlejul292022, articlejun28, articleoct122022, tokens
   }
 };
 
