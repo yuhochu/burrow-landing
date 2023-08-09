@@ -1,6 +1,6 @@
 import React from 'react';
 import LayoutContainer from '../../layout/layoutContainer/layoutContainer';
-import Lottie from 'react-lottie';
+import Lottie from 'lottie-react';
 import a from '../../assets/animated/a.json';
 import './homePage.scss';
 import clsx from 'clsx';
