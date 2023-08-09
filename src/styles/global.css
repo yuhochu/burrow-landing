@@ -1,0 +1,40 @@
+@import "./font.css";
+@import "swiper/css";
+
+html {
+    background-color: #14162B;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif
+}
+
+.t1 {
+    font-size: 90px;
+    font-style: normal;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.t1a {
+    font-size: 60px;
+    font-style: normal;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.t2 {
+    font-size: 26px;
+    font-style: normal;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.1
+}
+
+.t3 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5
+}
