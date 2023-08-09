@@ -5,19 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const HomePageBanner = () => {
-  const node = ({ lottie, text }) => (
-    <div className={`md:flex mb-10 animate-banner`}>
-      <div className={`md:flex md:flex-row-reverse`}>
-        <div className={`justify-center flex  md:flex-col`}>
-          {text}
-        </div>
-        <div className={`md:flex md:animate-lottie`}>
-          {lottie}
-        </div>
-      </div>
-    </div>
-  );
-
   return (
     <div className={`md:flex mb-10 animate-banner`}>
       <div className={`md:flex md:flex-row-reverse`}>
