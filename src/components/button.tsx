@@ -1,5 +1,6 @@
 import React, { forwardRef, useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
 type onClickHandler = (event: React.MouseEvent<HTMLElement>) => any
 type Props = {
@@ -62,8 +63,8 @@ const Button = forwardRef((props: Props, ref: any) => {
 
   return (
     <button
-      className={clsx(
-        'border-transparent rounded-md px-4 transition duration-500 ease select-none',
+      className={twMerge(
+        'border-transparent border rounded-md px-4 transition duration-500 ease select-none',
         _getBtnSizeClassName(size),
         disabled ? 'bg-gray-300 hover:bg-gray-300 text-gray-600 border-transparent' : _getBtnColorClassName(color),
         isLoading && '_loading',

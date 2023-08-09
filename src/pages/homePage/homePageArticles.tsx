@@ -66,7 +66,7 @@ const ArticleList = () => {
       modules={[Autoplay]}
     >
       {ARTICLE_LIST.map(d => (
-        <SwiperSlide className={'article-swiper'}>
+        <SwiperSlide className={'article-swiper'} key={d.title}>
           <Article title={d.title} image={d.image} date={d.date} linkTo={d.linkTo} />
         </SwiperSlide>
       ))}

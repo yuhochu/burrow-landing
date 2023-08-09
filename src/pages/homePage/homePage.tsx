@@ -27,17 +27,10 @@ const Section = ({ children, className }: BaseProps) => {
 const Banner1 = () => {
   return (
     <div className={'flex items-center mb-10'}>
-      <Lottie
-        options={{
-          loop: true,
-          autoplay: true,
-          animationData: a,
-          rendererSettings: {
-            preserveAspectRatio: 'xMidYMid slice'
-          }
-        }}
-        height={495}
-        width={825}
+      <Lottie animationData={a} loop={true} autoplay={true}
+              rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
+              height={495}
+              width={825}
       />
 
       <div>

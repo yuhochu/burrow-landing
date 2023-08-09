@@ -4,6 +4,7 @@ import assets from '../../components/assets';
 import { Box } from '../../components/box';
 import Image from '../../components/image';
 import React from 'react';
+import { twMerge } from 'tailwind-merge'
 
 const HomePageYield = ({ children }: BaseProps) => {
   const ButtonNode = ({ children }: BaseProps) => (
@@ -52,7 +53,7 @@ const HomePageYield = ({ children }: BaseProps) => {
 };
 
 const Box1 = ({ text1, text2, text3, children }: any) => (
-  <Box className={'mb-5 lg:mb-0'}>
+  <Box className={'mb-5 lg:mb-0 bg-primary-500'}>
     <div className={'t2 mb-4 font-medium'}>{text1}</div>
     <div className={'t1 mb-4'}>{text2}</div>
     <div className={'t3 mb-6'}>{text3}</div>
