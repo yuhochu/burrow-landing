@@ -26,8 +26,8 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  right: 5px;
-  top: 5px;
+  //right: 5px;
+  //top: 5px;
 }
 
 .signboard-wrap {
@@ -88,7 +88,7 @@
   }
 }
 
-.article-swiper{
+.article-swiper {
   //width: 590px;
   width: fit-content;
   max-width: 565px;
@@ -99,4 +99,24 @@
   //&:hover {
   //  transform: scale(1.02);
   //}
+}
+
+.animate-banner {
+  height: 518px;
+
+  .animate-lottie{
+    flex: 0 0 825px;
+  }
+
+  .animate-swiper{
+    width:300px;
+
+    .swiper-slide-next {
+      opacity: 0!important;
+    }
+
+    .swiper-slide-visible {
+      opacity: 1!important;
+    }
+  }
 }
