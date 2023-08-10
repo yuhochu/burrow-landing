@@ -18,16 +18,8 @@ const Header = () => {
 
 const NAVIGATIONS = [
   {
-    title: 'Markets',
-    to: {
-      pathname: '/markets',
-    },
-  },
-  {
-    title: 'Roadmap',
-    to: {
-      pathname: '/roadmap',
-    },
+    title: 'Docs',
+    to: '/docs',
   },
 ];
 const Navs = () => {

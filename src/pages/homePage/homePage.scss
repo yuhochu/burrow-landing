@@ -24,6 +24,10 @@ $mobileSize: theme('screens.md');
     padding: 20px 90px 20px 60px;
     position: relative;
     border: 1px solid #000;
+
+    @media (max-width: $mobileSize) {
+        padding: 20px 65px 20px 20px;
+    }
 }
 
 .btn-arrow {
@@ -36,9 +40,20 @@ $mobileSize: theme('screens.md');
     //top: 5px;
 }
 
+.roadmap-item{
+margin:10px 0 60px!important;
+}
+
 .signboard-wrap {
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: theme('screens.lg')) {
+        position: static;
+        margin-bottom: 40px;
+    }
 }
 
 .signboard-stand {
@@ -80,15 +95,30 @@ $mobileSize: theme('screens.md');
     border-radius: 50%;
     width: 12px;
     height: 12px;
+    flex: 0 0 12px;
 }
 
 .signboard-text {
     width: 395px;
+
+    @media (max-width: $mobileSize) {
+        width: auto;
+    }
 }
 
 .article-box {
     img {
         height: 276px
+    }
+
+    @media (max-width: $mobileSize) {
+        .box-image{
+            max-height: 200px;
+            overflow: hidden;
+        }
+     img{
+         height: auto;
+     }
     }
 }
 
@@ -98,11 +128,17 @@ $mobileSize: theme('screens.md');
     max-width: 565px;
     //margin-left: 30px;
     cursor: pointer;
+    margin-right: 30px;
     //transition: transform 0.3s;
     //
     //&:hover {
     //  transform: scale(1.02);
     //}
+
+    @media (max-width: $mobileSize) {
+      margin-right: 10px;
+        margin-left: 10px;
+    }
 }
 
 .animate-banner {
