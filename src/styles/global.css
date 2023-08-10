@@ -47,3 +47,26 @@ html {
     font-weight: 400;
     line-height: 1.5
 }
+
+@media (max-width: theme('screens.sm')) {
+    .t1 {
+        font-size: 60px;
+    }
+
+    .t1a {
+        font-size: 48px;
+    }
+
+    .t1b {
+        font-size: 54px;
+    }
+
+
+    .t2 {
+        font-size: 18px;
+    }
+
+    .t3 {
+        font-size: 16px;
+    }
+}
