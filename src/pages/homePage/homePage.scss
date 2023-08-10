@@ -1,120 +1,165 @@
+$mobileSize: theme('screens.md');
+
 .banner-title {
-  color: #FFF;
-  font-size: 100px;
-  font-family: 'Gantari', sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  line-height: 85px; /* 85% */
+    color: #FFF;
+    font-size: 100px;
+    font-family: 'Gantari', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 85px; /* 85% */
+
+    @media (max-width: $mobileSize) {
+        font-size: 60px;
+    }
 }
 
 .box-button {
-  color: #000;
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-  padding: 20px 90px 20px 60px;
-  position: relative;
-  border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 20px 90px 20px 60px;
+    position: relative;
+    border: 1px solid #000;
 }
 
 .btn-arrow {
-  height: 50px;
-  width: 50px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  //right: 5px;
-  //top: 5px;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    //right: 5px;
+    //top: 5px;
 }
 
 .signboard-wrap {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .signboard-stand {
-  position: relative;
-  height: 98px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+    position: relative;
+    height: 98px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .signboard-stick {
-  width: 12px;
-  height: 98px;
-  transform: rotate(-5deg);
-  flex-shrink: 0;
-  border: 2px solid #14162B;
-  background: #D2FF3A;
+    width: 12px;
+    height: 98px;
+    transform: rotate(-5deg);
+    flex-shrink: 0;
+    border: 2px solid #14162B;
+    background: #D2FF3A;
 }
 
 .signboard {
-  border: 1px solid #D2FF3A;
-  background: #23253A;
-  width: 271px;
-  height: 95px;
-  transform: rotate(-5deg);
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    border: 1px solid #D2FF3A;
+    background: #23253A;
+    width: 271px;
+    height: 95px;
+    transform: rotate(-5deg);
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .roadmap-line {
-  position: absolute;
-  top: 176px;
+    position: absolute;
+    top: 176px;
 }
 
 .signboard-ball {
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
 }
 
 .signboard-text {
-  width: 395px;
+    width: 395px;
 }
 
 .article-box {
-  img {
-    height: 276px
-  }
+    img {
+        height: 276px
+    }
 }
 
 .article-swiper {
-  //width: 590px;
-  width: fit-content;
-  max-width: 565px;
-  //margin-left: 30px;
-  cursor: pointer;
-  //transition: transform 0.3s;
-  //
-  //&:hover {
-  //  transform: scale(1.02);
-  //}
+    //width: 590px;
+    width: fit-content;
+    max-width: 565px;
+    //margin-left: 30px;
+    cursor: pointer;
+    //transition: transform 0.3s;
+    //
+    //&:hover {
+    //  transform: scale(1.02);
+    //}
 }
 
 .animate-banner {
-  height: 518px;
+    height: 518px;
 
-  .animate-lottie{
-    flex: 0 0 825px;
-  }
-
-  .animate-swiper{
-    width:300px;
-
-    .swiper-slide-next {
-      opacity: 0!important;
+    .animate-lottie {
+        flex: 0 0 825px;
     }
 
-    .swiper-slide-visible {
-      opacity: 1!important;
+    .animate-swiper {
+        width: 300px;
+
+        //.swiper-slide-next {
+        //  opacity: 0!important;
+        //}
+        //
+        //.swiper-slide-visible {
+        //  opacity: 1!important;
+        //}
     }
-  }
+
+    @media (max-width: $mobileSize) {
+        height: auto;
+
+        .animate-lottie {
+            flex: 0 0 auto;
+            margin-left: 130px;
+        }
+    }
+
+    @media (max-width: theme('screens.sm')) {
+        .animate-lottie {
+            margin-left: 95px;
+        }
+    }
 }
+
+.brrrline-wrap {
+    position: relative;
+
+
+    .mobile {
+        display: none;
+    }
+
+    @media (max-width: $mobileSize) {
+        display: flex;
+
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            display: block;
+        }
+    }
+}
+
+
+

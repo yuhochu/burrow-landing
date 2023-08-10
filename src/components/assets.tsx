@@ -1,4 +1,8 @@
 import React from 'react';
+import brrrlinebottom from '../assets/svg/brrrlinebottom.svg';
+import brrrlinetop from '../assets/svg/brrrlinetop.svg';
+import brrrlineleft from '../assets/svg/brrrlineleft.svg';
+import brrrlineright from '../assets/svg/brrrlineright.svg';
 import svgNear from '../assets/svg/near.svg';
 import svgDai from '../assets/svg/dai.svg';
 import svgUsd from '../assets/svg/usd.svg';
@@ -80,7 +84,7 @@ const assets = {
         </defs>
       </svg>
     ),
-    svgNear, svgDai, svgUsdt, svgUsd, svgArrowRight, svgHole
+    svgNear, svgDai, svgUsdt, svgUsd, svgArrowRight, svgHole, brrrlinebottom, brrrlinetop, brrrlineleft, brrrlineright
   },
   img: {
     articlemay11, articlefeb9, articlejul13, articlejul292022, articlejun28, articleoct122022, tokens
