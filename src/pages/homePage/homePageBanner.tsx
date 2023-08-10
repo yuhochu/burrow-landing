@@ -22,9 +22,9 @@ const HomePageBanner = () => {
             modules={[EffectFade, Autoplay]}
             className="animate-swiper"
           >
-            {/*<SwiperSlide data-swiper-autoplay="2900">*/}
-            {/*  <Brrr />*/}
-            {/*</SwiperSlide>*/}
+            <SwiperSlide data-swiper-autoplay="2900">
+              <Brrr />
+            </SwiperSlide>
 
             <SwiperSlide data-swiper-autoplay="5100">
               <TokensText />
