@@ -4,7 +4,6 @@ import assets from '../../components/assets';
 import { Box } from '../../components/box';
 import Image from '../../components/image';
 import React from 'react';
-import { twMerge } from 'tailwind-merge';
 import { ArrowRightIcon } from '../../components/svgIcon';
 import { Link } from 'react-router-dom';
 
@@ -31,7 +30,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         text2={'$18,425,690'}
         text3={'The first money market on NEAR native, bring more liquidity and DeFi compatibility'}
       >
-        <div className={'flex gap-5'}>
+        <div className={'flex xs:gap-5 justify-between xs:justify-start'}>
           <ButtonNode>Supply</ButtonNode>
           <ButtonNode>Borrow</ButtonNode>
         </div>
@@ -102,7 +101,7 @@ const Box1 = ({ text1, text2, text3, children }: any) => (
     <div className={'t2 mb-4 font-medium'}>{text1}</div>
     <div className={'t1 mb-4'}>{text2}</div>
     <div className={'t3 mb-6'}>{text3}</div>
-    <div className={'flex gap-5'}>{children}</div>
+    {children}
   </Box>
 );
 const Box2 = ({ text1, text2, children }: any) => (

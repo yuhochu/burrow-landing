@@ -4,7 +4,7 @@ import Button from '../components/button';
 
 const Header = () => {
   return (
-    <div className={'header mt-5 mb-5 flex px-5 justify-between'}>
+    <div className={'header items-center mt-5 mb-5 flex px-5 justify-between'}>
       <Link title={'burrow-cash'} to={'/'}>
         <div className={'logo'}>{assets.svg.logo}</div>
       </Link>
