@@ -28,6 +28,10 @@ $mobileSize: theme('screens.md');
   @media (max-width: $mobileSize) {
     padding: 20px 65px 20px 20px;
   }
+
+  @media (max-width: theme('screens.xs')) {
+    padding: 20px 60px 20px 15px;
+  }
 }
 
 .btn-arrow {
@@ -148,10 +152,11 @@ $mobileSize: theme('screens.md');
 
   .animate-lottie {
     flex: 0 0 825px;
+    width: 825px;
   }
 
   .animate-swiper {
-    width: 300px;
+    //width: 310px;
 
     //.swiper-slide-next {
     //  opacity: 0!important;
@@ -167,6 +172,7 @@ $mobileSize: theme('screens.md');
 
     .animate-lottie {
       flex: 0 0 auto;
+      width: auto;
       margin-left: 130px;
     }
   }

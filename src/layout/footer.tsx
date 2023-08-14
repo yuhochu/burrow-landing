@@ -55,7 +55,7 @@ const ICONS = [
   },
   {
     svg: assets.svg.telegram,
-    to: 'https://twitter.com',
+    to: 'https://t.me/ref_finance',
     target: '_blank',
   },
   {
