@@ -1,4 +1,4 @@
-import Lottie from 'lottie-react';
+import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 import brrLottie from '../../assets/animated/brrr-2.7s.mp4.lottie.json';
 import tokenLottie from '../../assets/animated/tokens-5.64s.mp4.lottie.json';
 import React, { useEffect, useRef, useState } from 'react';
@@ -8,8 +8,8 @@ import assets from '../../components/assets';
 import Image from '../../components/image';
 
 const HomePageBanner = () => {
-  const brrLottieRef = useRef(null);
-  const tokenLottieRef = useRef(null);
+  const brrLottieRef = useRef<LottieRefCurrentProps>();
+  const tokenLottieRef = useRef<LottieRefCurrentProps>();
   const swiperRef = React.useRef(null);
   const handleSwiperInit = (Swiper) => {
     swiperRef.current = Swiper;
