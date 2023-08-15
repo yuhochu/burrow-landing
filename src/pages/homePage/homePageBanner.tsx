@@ -6,12 +6,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
 import assets from '../../components/assets';
 import Image from '../../components/image';
+import SwiperClass from 'swiper';
 
 const HomePageBanner = () => {
-  const brrLottieRef = useRef<LottieRefCurrentProps>();
-  const tokenLottieRef = useRef<LottieRefCurrentProps>();
-  const swiperRef = React.useRef(null);
-  const handleSwiperInit = (Swiper) => {
+  const brrLottieRef = useRef<LottieRefCurrentProps>() as any;
+  const tokenLottieRef = useRef<LottieRefCurrentProps>() as any;
+  const swiperRef = React.useRef<SwiperClass>();
+  const handleSwiperInit = (Swiper: SwiperClass) => {
     swiperRef.current = Swiper;
   };
 
@@ -20,7 +21,7 @@ const HomePageBanner = () => {
     brrLottieRef?.current?.play();
   }, []);
 
-  const handleSwiperChange = (a) => {
+  const handleSwiperChange = (a: any) => {
     switch (a?.realIndex) {
       case 0:
         tokenLottieRef?.current?.stop();
