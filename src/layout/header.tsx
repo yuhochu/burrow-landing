@@ -4,6 +4,10 @@ import Button from '../components/button';
 import { BaseProps } from '../interfaces/interfaces';
 
 const Header = () => {
+  const handleEnterAppClick = () => {
+    window.location.replace('https://app.burrow.cash');
+  };
+
   return (
     <div className={'header items-center mt-5 mb-5 flex px-5 md:px-20 justify-between'}>
       <Link title={'burrow-cash'} to={'/'}>
@@ -11,7 +15,7 @@ const Header = () => {
       </Link>
       <div className={'flex gap-2 md:gap-5'}>
         <Navs />
-        <Button className={'flex gap-2 items-center'}>
+        <Button className={'flex gap-2 items-center'} onClick={handleEnterAppClick}>
           Enter App <ArrowIcon className={'hidden xs:block'} />
         </Button>
       </div>
