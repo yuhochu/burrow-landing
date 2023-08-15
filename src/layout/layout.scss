@@ -1,7 +1,4 @@
 .footer-icon {
-  border-radius: 12px;
-  border: 1px solid #494d69;
-  padding: 12px 13px;
   height:50px;
   width:50px;
   display: flex;
@@ -14,11 +11,18 @@
     fill: #979abe;
   }
 
-  &:hover {
-    background: linear-gradient(180deg, #eef3bf 0%, #e9f456 100%);
+  @media (min-width:theme('screens.md')) {
+    border-radius: 12px;
+    border: 1px solid #494d69;
+    padding: 12px 13px;
 
-    path {
-      fill: #332c4b;
+
+    &:hover {
+      background: linear-gradient(180deg, #eef3bf 0%, #e9f456 100%);
+
+      path {
+        fill: #332c4b;
+      }
     }
   }
 }

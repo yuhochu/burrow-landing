@@ -1,17 +1,19 @@
-import Lottie from 'lottie-react';
+import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 import brrLottie from '../../assets/animated/brrr-2.7s.mp4.lottie.json';
 import tokenLottie from '../../assets/animated/tokens-5.64s.mp4.lottie.json';
 import React, { useEffect, useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
 import assets from '../../components/assets';
 import Image from '../../components/image';
+import SwiperClass from 'swiper';
 
 const HomePageBanner = () => {
-  const brrLottieRef = useRef(null);
-  const tokenLottieRef = useRef(null);
-  const swiperRef = React.useRef(null);
-  const handleSwiperInit = (Swiper) => {
+  const brrLottieRef = useRef<LottieRefCurrentProps>() as any;
+  const tokenLottieRef = useRef<LottieRefCurrentProps>() as any;
+  const swiperRef = React.useRef<SwiperClass>();
+
+  const handleSwiperInit = (Swiper: SwiperClass) => {
     swiperRef.current = Swiper;
   };
 
@@ -20,7 +22,7 @@ const HomePageBanner = () => {
     brrLottieRef?.current?.play();
   }, []);
 
-  const handleSwiperChange = (a) => {
+  const handleSwiperChange = (a: any) => {
     switch (a?.realIndex) {
       case 0:
         tokenLottieRef?.current?.stop();
@@ -52,9 +54,11 @@ const HomePageBanner = () => {
         <div className={`md:flex mb-10 animate-banner pt-10 md:pt-0`}>
           <div className={`md:flex md:flex-row-reverse`}>
             <div className={`justify-center flex flex-col items-center md:flex-row-reverse`}>
-              <Brrr />
+              <div className={'animate-text'}>
+                <Brrr />
+              </div>
 
-              <div className={`md:flex animate-lottie`}>
+              <div className={`animate-lottie`}>
                 <Lottie
                   animationData={brrLottie}
                   loop={false}
@@ -74,8 +78,10 @@ const HomePageBanner = () => {
         <div className={`md:flex mb-10 animate-banner pt-10 md:pt-0`}>
           <div className={`md:flex md:flex-row-reverse`}>
             <div className={`justify-center flex flex-col items-center md:flex-row-reverse`}>
-              <TokensText />
-              <div className={`md:flex animate-lottie`}>
+              <div className={'animate-text'}>
+                <TokensText />
+              </div>
+              <div className={`animate-lottie`}>
                 <Lottie
                   animationData={tokenLottie}
                   loop={false}

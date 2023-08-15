@@ -1,10 +1,11 @@
 import { BaseProps } from '../../interfaces/interfaces';
 import { Box, BoxProps } from '../../components/box';
-import Image from '../../components/image';
 import assets from '../../components/assets';
 import { Link } from 'react-router-dom';
-import { Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { ArrowRightIcon } from '../../components/svgIcon';
+import React from 'react';
 
 const HomePageArticles = () => {
   return (
@@ -54,23 +55,38 @@ const ARTICLE_LIST = [
 ];
 
 const ArticleList = () => {
+  const SwiperNext = () => {
+    const swiper = useSwiper();
+
+    return (
+      <div className={'absolute right-0 z-10 rounded-full border border-white btn-arrow bg-black'} onClick={() => swiper.slideNext()}>
+        <ArrowRightIcon stroke={'#fff'} />
+      </div>
+    );
+  };
+
   return (
-    <Swiper
-      spaceBetween={0}
-      loop={true}
-      autoplay={{
-        delay: 2000,
-        pauseOnMouseEnter: true,
-      }}
-      slidesPerView={'auto'}
-      modules={[Autoplay]}
-    >
-      {ARTICLE_LIST.map((d) => (
-        <SwiperSlide className={'article-swiper'} key={d.title}>
-          <Article title={d.title} image={d.image} date={d.date} linkTo={d.linkTo} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className={'relative article-list'}>
+      <Swiper
+        spaceBetween={0}
+        loop={true}
+        // autoplay={{
+        //   delay: 2000,
+        //   pauseOnMouseEnter: true,
+        // }}
+        slidesPerView={'auto'}
+        navigation={true}
+        modules={[Navigation]}
+      >
+        <SwiperNext />
+
+        {ARTICLE_LIST.map((d) => (
+          <SwiperSlide className={'article-swiper'} key={d.title}>
+            <Article title={d.title} image={d.image} date={d.date} linkTo={d.linkTo} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
