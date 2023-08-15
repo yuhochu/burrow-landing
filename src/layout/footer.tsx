@@ -39,7 +39,7 @@ const NAVIGATIONS = [
   },
   {
     title: 'Docs',
-    to: '/',
+    to: 'https://docs.burrow.cash/product-docs/introduction/burrow',
     target: '_blank',
   },
   {
