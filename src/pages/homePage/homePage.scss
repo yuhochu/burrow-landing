@@ -26,12 +26,20 @@ $mobileSize: theme('screens.md');
   border: 1px solid #000;
 
   @media (max-width: $mobileSize) {
-    padding: 20px 65px 20px 20px;
+    padding: 11px 60px 11px 15px;
+    font-size: 16px;
+
+    .btn-arrow {
+      height: 35px;
+      width: 35px;
+      padding: 5px;
+      top: 3px !important;
+    }
   }
 
-  @media (max-width: theme('screens.xs')) {
-    padding: 20px 60px 20px 15px;
-  }
+  //@media (max-width: theme('screens.xs')) {
+  //  padding: 11px 60px 11px 15px;
+  //}
 }
 
 .btn-arrow {
@@ -127,6 +135,17 @@ $mobileSize: theme('screens.md');
       height: auto;
     }
   }
+
+  @media (max-width: 420px) {
+    .box-image {
+      height: 182px;
+      overflow: hidden;
+    }
+    img {
+      height: 100%;
+    }
+  }
+
 }
 
 .article-swiper {
@@ -158,9 +177,9 @@ $mobileSize: theme('screens.md');
     z-index: 3;
   }
 
-  .animate-text{
+  .animate-text {
     flex: 0 0 310px;
-    width:310px
+    width: 310px
   }
 
   .animate-swiper {
@@ -178,9 +197,9 @@ $mobileSize: theme('screens.md');
   @media (max-width: $mobileSize) {
     height: auto;
 
-    .animate-text{
+    .animate-text {
       flex: 0 0 auto;
-      width:auto;
+      width: auto;
     }
 
     .animate-lottie {
@@ -219,11 +238,10 @@ $mobileSize: theme('screens.md');
 }
 
 
-
-.article-list{
-  .btn-arrow{
-    padding:5px;
-    top:50%;
+.article-list {
+  .btn-arrow {
+    padding: 5px;
+    top: 50%;
     transform: translateY(-50%);
   }
 }
