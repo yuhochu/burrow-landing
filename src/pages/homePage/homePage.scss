@@ -40,6 +40,7 @@ $mobileSize: theme('screens.md');
   justify-content: center;
   display: flex;
   align-items: center;
+  cursor: pointer;
   //right: 5px;
   //top: 5px;
 }
@@ -134,7 +135,7 @@ $mobileSize: theme('screens.md');
   max-width: 565px;
   //margin-left: 30px;
   cursor: pointer;
-  margin-right: 30px;
+  margin-right: 40px;
   //transition: transform 0.3s;
   //
   //&:hover {
@@ -151,8 +152,15 @@ $mobileSize: theme('screens.md');
   height: 518px;
 
   .animate-lottie {
-    flex: 0 0 825px;
-    width: 825px;
+    //flex: 0 0 825px;
+    //width: 825px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .animate-text{
+    flex: 0 0 310px;
+    width:310px
   }
 
   .animate-swiper {
@@ -169,6 +177,11 @@ $mobileSize: theme('screens.md');
 
   @media (max-width: $mobileSize) {
     height: auto;
+
+    .animate-text{
+      flex: 0 0 auto;
+      width:auto;
+    }
 
     .animate-lottie {
       flex: 0 0 auto;
@@ -207,3 +220,10 @@ $mobileSize: theme('screens.md');
 
 
 
+.article-list{
+  .btn-arrow{
+    padding:5px;
+    top:50%;
+    transform: translateY(-50%);
+  }
+}
