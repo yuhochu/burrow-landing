@@ -1,4 +1,5 @@
 $mobileSize: theme('screens.md');
+$smallMobileSize: theme('screens.xs');
 
 .banner-title {
   color: #FFF;
@@ -53,6 +54,32 @@ $mobileSize: theme('screens.md');
   //top: 5px;
 }
 
+@media (max-width: $smallMobileSize) {
+  .title-roadmap {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+
+  .yield-arrow {
+    height: 40px !important;
+    width: 40px !important;
+    padding: 8px;
+    right: 18px !important;
+  }
+
+  .box2 {
+    img {
+      height: 49px;
+      width: 49px;
+    }
+
+    .yield-arrow {
+      bottom: 20px !important;
+    }
+  }
+}
+
+
 .roadmap-item {
   @media (max-width: theme('screens.lg')) {
     margin: 10px 0 60px !important;
@@ -68,6 +95,13 @@ $mobileSize: theme('screens.md');
   @media (max-width: theme('screens.lg')) {
     position: static;
     margin-bottom: 40px;
+  }
+
+  @media (max-width: $smallMobileSize) {
+    img {
+      width: 98px;
+      height: 25px;
+    }
   }
 }
 
@@ -86,6 +120,11 @@ $mobileSize: theme('screens.md');
   flex-shrink: 0;
   border: 2px solid #14162B;
   background: #D2FF3A;
+
+  @media (max-width: $smallMobileSize) {
+    width: 7px;
+    height: 52px;
+  }
 }
 
 .signboard {
@@ -99,6 +138,13 @@ $mobileSize: theme('screens.md');
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+  @media (max-width: $smallMobileSize) {
+    width: 150px;
+    height: 52px;
+    top: 45px !important;
+  }
 }
 
 .roadmap-line {
@@ -115,6 +161,7 @@ $mobileSize: theme('screens.md');
 
 .signboard-text {
   width: 395px;
+  font-weight: 400;
 
   @media (max-width: $mobileSize) {
     width: auto;

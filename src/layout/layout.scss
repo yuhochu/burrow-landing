@@ -1,6 +1,6 @@
 .footer-icon {
-  height:50px;
-  width:50px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
     fill: #979abe;
   }
 
-  @media (min-width:theme('screens.md')) {
+  @media (min-width: theme('screens.md')) {
     border-radius: 12px;
     border: 1px solid #494d69;
     padding: 12px 13px;
@@ -27,3 +27,8 @@
   }
 }
 
+@media (max-width: theme('screens.xs')) {
+  .footer {
+    font-size: 14px;
+  }
+}

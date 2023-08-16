@@ -15,7 +15,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         className={'rounded-full bg-black absolute btn-arrow'}
         style={{
           right: 5,
-          top: 5,
+          top: 5
         }}
       >
         {assets.svg.arrowRight}
@@ -24,7 +24,7 @@ const HomePageYield = ({ children }: BaseProps) => {
   );
 
   return (
-    <div className={'lg:grid gap-5 grid-cols-2'}>
+    <div className={'lg:grid gap-5 grid-cols-2 homepage-yield'}>
       <Box1
         text1={'Market Size'}
         text2={'$18,425,690'}
@@ -36,15 +36,16 @@ const HomePageYield = ({ children }: BaseProps) => {
         </div>
       </Box1>
 
-      <Box1 text1={'Yield available'} text2={'20+'} text3={'Supply and borrow interest-bearing assets (stETH, stNEAR, aUSDC) on NEAR'}>
+      <Box1 text1={'Yield available'} text2={'20+'}
+            text3={'Supply and borrow interest-bearing assets (stETH, stNEAR, aUSDC) on NEAR'}>
         <Link
           to={'/markets'}
-          className={'rounded-full border border-black absolute btn-arrow'}
+          className={'rounded-full border border-black absolute btn-arrow yield-arrow'}
           style={{
             top: 30,
             right: 30,
             height: 66,
-            width: 66,
+            width: 66
           }}
         >
           <ArrowRightIcon stroke={'#000'} />
@@ -60,15 +61,15 @@ const HomePageYield = ({ children }: BaseProps) => {
 
         <Link
           to={'/markets'}
-          className={'rounded-full border border-white btn-arrow absolute'}
+          className={'rounded-full border border-white btn-arrow absolute yield-arrow'}
           style={{
             bottom: 40,
             right: 30,
             height: 66,
-            width: 66,
+            width: 66
           }}
         >
-          <ArrowRightIcon stroke={'#fff'} />
+          <ArrowRightIcon stroke={'#fff'}  />
         </Link>
       </Box2>
 
@@ -81,12 +82,12 @@ const HomePageYield = ({ children }: BaseProps) => {
 
         <Link
           to={'/markets'}
-          className={'rounded-full border border-white btn-arrow absolute'}
+          className={'rounded-full border border-white btn-arrow absolute yield-arrow'}
           style={{
             bottom: 40,
             right: 30,
             height: 66,
-            width: 66,
+            width: 66
           }}
         >
           <ArrowRightIcon stroke={'#fff'} />
@@ -97,7 +98,7 @@ const HomePageYield = ({ children }: BaseProps) => {
 };
 
 const Box1 = ({ text1, text2, text3, children }: any) => (
-  <Box className={'mb-5 lg:mb-0 bg-primary-500 relative'}>
+  <Box className={'mb-5 lg:mb-0 bg-primary-500 relative box1'}>
     <div className={'t2 mb-4 font-medium'}>{text1}</div>
     <div className={'t1 mb-4'}>{text2}</div>
     <div className={'t3 mb-6'}>{text3}</div>
@@ -105,7 +106,7 @@ const Box1 = ({ text1, text2, text3, children }: any) => (
   </Box>
 );
 const Box2 = ({ text1, text2, children }: any) => (
-  <Box className={'mb-5 lg:mb-0 bg-gray-800 text-white relative'}>
+  <Box className={'mb-5 lg:mb-0 bg-gray-800 text-white relative box2'}>
     <div className={'mb-8'}>{children}</div>
     <div className={'t2 mb-3'}>{text1}</div>
     <div className={'t1 mb-1 text-primary-500'}>{text2}</div>
