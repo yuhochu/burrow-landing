@@ -6,7 +6,7 @@ import Image from '../../components/image';
 const HomePageRoadMap = () => {
   return (
     <div>
-      <div className={'t1a mb-16 text-center md:text-left'}>ROADMAP</div>
+      <div className={'t1a mb-16 text-center md:text-left title-roadmap'}>ROADMAP</div>
       <div className={'relative'}>
         <_Row
           signBoardText={'2023 Q3'}
@@ -78,7 +78,7 @@ const _Row = (props: RowProps) => {
       >
         <span className={'t1a text-primary-500 -mt-2'}>{props?.signBoardText}</span>
       </SignBoard>
-      <div>
+      <div className={"px-4 xs:px-0"}>
         {props?.textList?.map((d) => (
           <div key={d} className={'t2 mb-8 flex items-center font-normal'}>
             <div className={'signboard-ball bg-primary-500 mr-5'} />
