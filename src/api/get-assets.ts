@@ -8,6 +8,7 @@ const getPrice = (tokenId, priceResponse, metadata) => {
 };
 
 const getAssets = async () => {
+  console.log("waddd")
   const assets = await getAssetsDetailed();
   console.log("assetsassetsassets",assets)
   const tokenIds = assets.map((asset) => asset.token_id);

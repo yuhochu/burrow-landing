@@ -11,12 +11,12 @@
 // import { setupNeth } from "@near-wallet-selector/neth";
 // import { setupModal } from "@near-wallet-selector/modal-ui";
 // import type { WalletSelectorModal } from "@near-wallet-selector/modal-ui";
-// import { Near } from 'near-api-js/lib/near';
-// import { Account } from 'near-api-js/lib/account';
-// import { BrowserLocalStorageKeyStore } from "near-api-js/lib/key_stores";
-import { Near } from '@near-js/wallet-account';
-import { Account } from '@near-js/accounts';
-import { BrowserLocalStorageKeyStore } from '@near-js/keystores-browser';
+import { Near } from 'near-api-js/lib/near';
+import { Account } from 'near-api-js/lib/account';
+import { BrowserLocalStorageKeyStore } from "near-api-js/lib/key_stores";
+// import { Near } from '@near-js/wallet-account';
+//
+// import { BrowserLocalStorageKeyStore } from '@near-js/keystores-browser';
 
 // import BN from "bn.js";
 // import { map, distinctUntilChanged } from "rxjs";

@@ -9,6 +9,8 @@ import HomePageYield from './homePageYield';
 import HomePageBanner from './homePageBanner';
 import { fetchAssets } from '../../datasource/fetchAssets';
 
+
+
 const HomePage = (props: BaseProps) => {
 
   useEffect(() => {

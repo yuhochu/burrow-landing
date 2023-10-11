@@ -1,5 +1,6 @@
+console.log("1")
 import { Contract } from "near-api-js";
-
+console.log("2")
 // import BN from "bn.js";
 import Decimal from "decimal.js";
 import { defaultNetwork, LOGIC_CONTRACT_NAME } from "./config";
@@ -13,7 +14,7 @@ import { IBurrow, IConfig } from "../interfaces/burrow";
 import { getContract } from "../store";
 import {  getAccount, } from "./wallet-selector-compat";
 // import { getWalletSelector, getAccount, functionCall } from "./wallet-selector-compat";
-
+console.log("3")
 export const getViewAs = () => {
   const url = new URL(window.location.href.replace("/#", ""));
   const searchParams = new URLSearchParams(url.search);
@@ -96,6 +97,7 @@ console.log("heyyyyy")
     try {
       const viewAccount = await getAccount(getViewAs());
       console.log("contractcontract",contract.contractId)
+      console.log("viewAccountviewAccount",viewAccount)
       return await viewAccount.viewFunction(contract.contractId, methodName, args, {
         // always parse to string, JSON parser will fail if its not a json
         parse: (data: Uint8Array) => {
@@ -213,4 +215,14 @@ export function decimalMin(a: string | number | Decimal, b: string | number | De
   a = new Decimal(a);
   b = new Decimal(b);
   return a.lt(b) ? a : b;
+}
+export function standardizeAsset(asset) {
+  // if (asset.symbol === "wNEAR") {
+  //   asset.symbol = nearMetadata.symbol;
+  //   asset.icon = nearMetadata.icon;
+  // }
+  // if (asset.symbol === "WOO") {
+  //   asset.icon = wooMetadata.icon;
+  // }
+  return asset;
 }
