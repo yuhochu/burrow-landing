@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import LayoutContainer from '../../layout/layoutContainer/layoutContainer';
 import './homePage.scss';
 import clsx from 'clsx';
@@ -7,8 +7,14 @@ import HomePageRoadMap from './homePageRoadMap';
 import HomePageArticles from './homePageArticles';
 import HomePageYield from './homePageYield';
 import HomePageBanner from './homePageBanner';
+import { fetchAssets } from '../../datasource/fetchAssets';
 
 const HomePage = (props: BaseProps) => {
+
+  useEffect(() => {
+    fetchAssets();
+  }, []);
+
   return (
     <LayoutContainer className={'home-page'}>
       <HomePageBanner />
