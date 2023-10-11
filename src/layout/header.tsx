@@ -5,7 +5,7 @@ import { BaseProps } from '../interfaces/interfaces';
 
 const Header = () => {
   const handleEnterAppClick = () => {
-    window.location.href = 'https://app.burrow.cash';
+    window.location.href = 'https://app.burrow.finance';
   };
 
   return (
@@ -26,7 +26,7 @@ const Header = () => {
 const NAVIGATIONS = [
   {
     title: 'Docs',
-    to: 'https://docs.burrow.cash/product-docs/introduction/burrow',
+    to: 'https://docs.burrow.finance/product-docs/introduction/burrow',
     target: '_blank'
   }
 ];

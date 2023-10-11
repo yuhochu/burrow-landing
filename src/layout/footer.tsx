@@ -35,11 +35,11 @@ const Footer = () => {
 const NAVIGATIONS = [
   {
     title: 'App',
-    to: 'https://app.burrow.cash/',
+    to: 'https://app.burrow.finance/',
   },
   {
     title: 'Docs',
-    to: 'https://docs.burrow.cash/product-docs/introduction/burrow',
+    to: 'https://docs.burrow.finance/product-docs/introduction/burrow',
     target: '_blank',
   },
   {

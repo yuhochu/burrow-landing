@@ -8,8 +8,12 @@ import { ArrowRightIcon } from '../../components/svgIcon';
 import { Link } from 'react-router-dom';
 
 const HomePageYield = ({ children }: BaseProps) => {
+  const handleSupplyBorrowClick = () => {
+    window.location.href = 'https://app.burrow.finance';
+  };
+
   const ButtonNode = ({ children }: BaseProps) => (
-    <Button color={'third'} className={'box-button'}>
+    <Button color={'third'} className={'box-button'} onClick={handleSupplyBorrowClick}>
       {children}
       <div
         className={'rounded-full bg-black absolute btn-arrow'}
@@ -39,7 +43,7 @@ const HomePageYield = ({ children }: BaseProps) => {
       <Box1 text1={'Yield available'} text2={'20+'}
             text3={'Supply and borrow interest-bearing assets (stETH, stNEAR, aUSDC) on NEAR'}>
         <Link
-          to={'/markets'}
+          to={'https://app.burrow.finance/markets/'}
           className={'rounded-full border border-black absolute btn-arrow yield-arrow'}
           style={{
             top: 30,
@@ -60,7 +64,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         <Image src={assets.svg.svgNear} />
 
         <Link
-          to={'/markets'}
+          to={'https://app.burrow.finance/tokenDetail/wrap.near'}
           className={'rounded-full border border-white btn-arrow absolute yield-arrow'}
           style={{
             bottom: 40,
@@ -69,7 +73,7 @@ const HomePageYield = ({ children }: BaseProps) => {
             width: 66
           }}
         >
-          <ArrowRightIcon stroke={'#fff'}  />
+          <ArrowRightIcon stroke={'#fff'} />
         </Link>
       </Box2>
 
@@ -81,7 +85,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         </div>
 
         <Link
-          to={'/markets'}
+          to={'https://app.burrow.finance/tokenDetail/dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near'}
           className={'rounded-full border border-white btn-arrow absolute yield-arrow'}
           style={{
             bottom: 40,
