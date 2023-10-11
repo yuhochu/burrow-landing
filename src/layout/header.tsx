@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div className={'header items-center mt-5 mb-5 flex px-5 md:px-20 justify-between'}>
-      <Link title={'burrow-cash'} to={'/'}>
+      <Link title={'burrow-cash'} to={'https://app.burrow.finance'}>
         <div className={'logo'}>{assets.svg.logo}</div>
       </Link>
       <div className={'flex gap-2 md:gap-5'}>
