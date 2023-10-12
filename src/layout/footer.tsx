@@ -55,11 +55,11 @@ const ICONS = [
     to: 'https://twitter.com/burrowcash',
     target: '_blank',
   },
-  {
-    svg: assets.svg.telegram,
-    to: 'https://t.me/ref_finance',
-    target: '_blank',
-  },
+  // {
+  //   svg: assets.svg.telegram,
+  //   to: 'https://t.me/ref_finance',
+  //   target: '_blank',
+  // },
   {
     svg: assets.svg.discord,
     to: 'https://discord.com/invite/gUWBKy9Vur',

@@ -19,7 +19,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         className={'rounded-full bg-black absolute btn-arrow'}
         style={{
           right: 5,
-          top: 5
+          top: 5,
         }}
       >
         {assets.svg.arrowRight}
@@ -31,7 +31,7 @@ const HomePageYield = ({ children }: BaseProps) => {
     <div className={'lg:grid gap-5 grid-cols-2 homepage-yield'}>
       <Box1
         text1={'Market Size'}
-        text2={'$18,425,690'}
+        text2={'$19,635,690'}
         text3={'The first money market on NEAR native, bring more liquidity and DeFi compatibility'}
       >
         <div className={'flex xs:gap-5 justify-between xs:justify-start'}>
@@ -40,8 +40,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         </div>
       </Box1>
 
-      <Box1 text1={'Yield available'} text2={'20+'}
-            text3={'Supply and borrow interest-bearing assets (stETH, stNEAR, aUSDC) on NEAR'}>
+      <Box1 text1={'Yield available'} text2={'20+'} text3={'Supply and borrow interest-bearing assets (stETH, stNEAR, aUSDC) on NEAR'}>
         <Link
           to={'https://app.burrow.finance/markets/'}
           className={'rounded-full border border-black absolute btn-arrow yield-arrow'}
@@ -49,7 +48,7 @@ const HomePageYield = ({ children }: BaseProps) => {
             top: 30,
             right: 30,
             height: 66,
-            width: 66
+            width: 66,
           }}
         >
           <ArrowRightIcon stroke={'#000'} />
@@ -60,7 +59,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         </div>
       </Box1>
 
-      <Box2 text1={'Yield APY'} text2={'1.02%'}>
+      <Box2 text1={'Yield APY'} text2={'1.20%'}>
         <Image src={assets.svg.svgNear} />
 
         <Link
@@ -70,14 +69,14 @@ const HomePageYield = ({ children }: BaseProps) => {
             bottom: 40,
             right: 30,
             height: 66,
-            width: 66
+            width: 66,
           }}
         >
           <ArrowRightIcon stroke={'#fff'} />
         </Link>
       </Box2>
 
-      <Box2 text1={'Yield APY up to'} text2={'8.91%'}>
+      <Box2 text1={'Yield APY up to'} text2={'9.56%'}>
         <div className={'flex'}>
           <Image src={assets.svg.svgUsd} className={'-mx-2'} />
           <Image src={assets.svg.svgUsdt} className={'-mx-2 relative z-10'} />
@@ -91,7 +90,7 @@ const HomePageYield = ({ children }: BaseProps) => {
             bottom: 40,
             right: 30,
             height: 66,
-            width: 66
+            width: 66,
           }}
         >
           <ArrowRightIcon stroke={'#fff'} />
