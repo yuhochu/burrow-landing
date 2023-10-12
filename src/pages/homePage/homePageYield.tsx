@@ -31,7 +31,7 @@ const HomePageYield = ({ children }: BaseProps) => {
     <div className={'lg:grid gap-5 grid-cols-2 homepage-yield'}>
       <Box1
         text1={'Market Size'}
-        text2={'$19,635,690'}
+        text2={'$19,629,208'}
         text3={'The first money market on NEAR native, bring more liquidity and DeFi compatibility'}
       >
         <div className={'flex xs:gap-5 justify-between xs:justify-start'}>
@@ -59,7 +59,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         </div>
       </Box1>
 
-      <Box2 text1={'Yield APY'} text2={'1.20%'}>
+      <Box2 text1={'Yield APY'} text2={'1.02%'}>
         <Image src={assets.svg.svgNear} />
 
         <Link
@@ -76,7 +76,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         </Link>
       </Box2>
 
-      <Box2 text1={'Yield APY up to'} text2={'9.56%'}>
+      <Box2 text1={'Yield APY up to'} text2={'8.91%'}>
         <div className={'flex'}>
           <Image src={assets.svg.svgUsd} className={'-mx-2'} />
           <Image src={assets.svg.svgUsdt} className={'-mx-2 relative z-10'} />
