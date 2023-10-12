@@ -108,6 +108,7 @@ const Box1 = ({ text1, text2, text3, children }: any) => (
     {children}
   </Box>
 );
+
 const Box2 = ({ text1, text2, children }: any) => (
   <Box className={'mb-5 lg:mb-0 bg-gray-800 text-white relative box2'}>
     <div className={'mb-8'}>{children}</div>
