@@ -18,11 +18,14 @@ const HomePageBanner = () => {
   };
 
   useEffect(() => {
+    console.log("swiperRef.current",swiperRef.current)
+    console.log("brrLottieRef?.current",brrLottieRef?.current)
     swiperRef?.current?.autoplay.start();
     brrLottieRef?.current?.play();
   }, []);
 
   const handleSwiperChange = (a: any) => {
+    console.log('i', a?.realIndex);
     switch (a?.realIndex) {
       case 0:
         tokenLottieRef?.current?.stop();
@@ -31,6 +34,8 @@ const HomePageBanner = () => {
       case 1:
         brrLottieRef?.current?.stop();
         tokenLottieRef?.current?.play();
+        console.log('1ref', brrLottieRef);
+        console.log('2ref', tokenLottieRef);
     }
   };
 
@@ -44,13 +49,13 @@ const HomePageBanner = () => {
       allowTouchMove={false}
       preventInteractionOnTransition={true}
       fadeEffect={{
-        crossFade: true,
+        crossFade: true
       }}
       onSlideChange={handleSwiperChange}
       modules={[EffectFade, Autoplay]}
-      className="animate-swiper"
+      className='animate-swiper'
     >
-      <SwiperSlide data-swiper-autoplay="2720">
+      <SwiperSlide data-swiper-autoplay='2720'>
         <div className={`md:flex mb-10 animate-banner pt-10 md:pt-0`}>
           <div className={`md:flex md:flex-row-reverse`}>
             <div className={`justify-center flex flex-col items-center md:flex-row-reverse`}>
@@ -74,7 +79,7 @@ const HomePageBanner = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide data-swiper-autoplay="5250">
+      <SwiperSlide data-swiper-autoplay='5250'>
         <div className={`md:flex mb-10 animate-banner pt-10 md:pt-0`}>
           <div className={`md:flex md:flex-row-reverse`}>
             <div className={`justify-center flex flex-col items-center md:flex-row-reverse`}>
