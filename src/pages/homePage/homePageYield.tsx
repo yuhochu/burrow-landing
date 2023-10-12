@@ -59,7 +59,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         </div>
       </Box1>
 
-      <Box2 text1={'Yield APY'} text2={'1.02%'}>
+      <Box2 text1={'Yield APY'} text2={'1.21%'}>
         <Image src={assets.svg.svgNear} />
 
         <Link
@@ -76,7 +76,7 @@ const HomePageYield = ({ children }: BaseProps) => {
         </Link>
       </Box2>
 
-      <Box2 text1={'Yield APY up to'} text2={'8.91%'}>
+      <Box2 text1={'Yield APY up to'} text2={'9.58%'}>
         <div className={'flex'}>
           <Image src={assets.svg.svgUsd} className={'-mx-2'} />
           <Image src={assets.svg.svgUsdt} className={'-mx-2 relative z-10'} />
