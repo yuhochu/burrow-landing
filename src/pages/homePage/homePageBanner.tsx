@@ -1,14 +1,12 @@
 import Lottie, { LottieRefCurrentProps } from 'lottie-react';
+import brrLottie from '../../assets/animated/brrr-2.7s.mp4.lottie.json';
+import tokenLottie from '../../assets/animated/tokens-5.64s.mp4.lottie.json';
 import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
 import assets from '../../components/assets';
 import Image from '../../components/image';
 import SwiperClass from 'swiper';
-// @ts-ignore
-const TokenAnimation = React.lazy(() => import('./tokenAnimation.tsx'))
-// @ts-ignore
-const BrrAnimation = React.lazy(() => import('./brrAnimation.tsx'));
 
 SwiperClass.use([Autoplay]);
 const HomePageBanner = () => {
@@ -64,7 +62,16 @@ const HomePageBanner = () => {
                 <Brrr />
               </div>
               <div className={`animate-lottie`}>
-                <BrrAnimation ref={brrLottieRef} onComplete={handleBrrrLottyComplete}/>
+                <Lottie
+                  animationData={brrLottie}
+                  onComplete={handleBrrrLottyComplete}
+                  loop={false}
+                  autoplay={false}
+                  rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
+                  height={495}
+                  width={825}
+                  lottieRef={brrLottieRef}
+                />
               </div>
             </div>
           </div>
@@ -79,7 +86,16 @@ const HomePageBanner = () => {
                 <TokensText />
               </div>
               <div className={`animate-lottie`}>
-                <TokenAnimation onComplete={handleTokenLottyComplete} ref={tokenLottieRef}/>
+                <Lottie
+                  animationData={tokenLottie}
+                  onComplete={handleTokenLottyComplete}
+                  loop={false}
+                  autoplay={false}
+                  rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
+                  height={495}
+                  width={825}
+                  lottieRef={tokenLottieRef}
+                />
               </div>
             </div>
           </div>
