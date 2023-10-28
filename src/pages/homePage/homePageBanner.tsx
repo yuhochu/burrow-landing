@@ -1,16 +1,17 @@
 import Lottie, { LottieRefCurrentProps } from 'lottie-react';
-import brrLottie from '../../assets/animated/brrr-2.7s.mp4.lottie.json';
-import tokenLottie from '../../assets/animated/tokens-5.64s.mp4.lottie.json';
 import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
 import assets from '../../components/assets';
 import Image from '../../components/image';
 import SwiperClass from 'swiper';
+// @ts-ignore
+const TokenAnimation = React.lazy(() => import('./tokenAnimation.tsx'))
+// @ts-ignore
+const BrrAnimation = React.lazy(() => import('./brrAnimation.tsx'));
 
 SwiperClass.use([Autoplay]);
 const HomePageBanner = () => {
-  const [swiperAutoPlay, setSwiperAutoPlay] = useState(false);
   const brrLottieRef = useRef<LottieRefCurrentProps>() as any;
   const tokenLottieRef = useRef<LottieRefCurrentProps>() as any;
   const swiperRef = React.useRef<SwiperClass>();
@@ -24,31 +25,6 @@ const HomePageBanner = () => {
       brrLottieRef?.current?.play();
     }
   }, [brrLottieRef?.current]);
-  // useEffect(() => {
-  //   if (swiperRef?.current?.autoplay) {
-  //     setSwiperAutoPlay(true);
-  //     swiperRef?.current?.autoplay.start();
-  //     brrLottieRef?.current?.play();
-  //   }
-  // }, [swiperRef?.current]);
-
-  const handleSwiperChange = (a: any) => {
-    // console.log('sref', a?.realIndex, swiperRef?.current?.autoplay, swiperRef?.current?.autoplay?.running, swiperRef?.current?.autoplay?.paused);
-    // if (!swiperRef?.current?.autoplay?.running) {
-    //   swiperRef?.current?.autoplay.start();
-    // } else {
-    //   swiperRef?.current?.autoplay.resume();
-    // }
-    // switch (a?.realIndex) {
-    //   case 0:
-    //     tokenLottieRef?.current?.stop();
-    //     brrLottieRef?.current?.play();
-    //     break;
-    //   case 1:
-    //     brrLottieRef?.current?.stop();
-    //     tokenLottieRef?.current?.play();
-    // }
-  };
 
   const handleBrrrLottyComplete = () => {
     console.log('1Complete ');
@@ -70,7 +46,7 @@ const HomePageBanner = () => {
       effect={'fade'}
       onInit={handleSwiperInit}
       loop={true}
-      autoplay={swiperAutoPlay}
+      autoplay={false}
       allowTouchMove={false}
       preventInteractionOnTransition={true}
       fadeEffect={{
@@ -88,16 +64,7 @@ const HomePageBanner = () => {
                 <Brrr />
               </div>
               <div className={`animate-lottie`}>
-                <Lottie
-                  animationData={brrLottie}
-                  onComplete={handleBrrrLottyComplete}
-                  loop={false}
-                  autoplay={false}
-                  rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
-                  height={495}
-                  width={825}
-                  lottieRef={brrLottieRef}
-                />
+                <BrrAnimation ref={brrLottieRef} onComplete={handleBrrrLottyComplete}/>
               </div>
             </div>
           </div>
@@ -112,16 +79,7 @@ const HomePageBanner = () => {
                 <TokensText />
               </div>
               <div className={`animate-lottie`}>
-                <Lottie
-                  animationData={tokenLottie}
-                  onComplete={handleTokenLottyComplete}
-                  loop={false}
-                  autoplay={false}
-                  rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
-                  height={495}
-                  width={825}
-                  lottieRef={tokenLottieRef}
-                />
+                <TokenAnimation onComplete={handleTokenLottyComplete} ref={tokenLottieRef}/>
               </div>
             </div>
           </div>
